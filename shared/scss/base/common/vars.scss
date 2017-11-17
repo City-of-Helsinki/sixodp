@@ -19,25 +19,25 @@ $headings-font-family: $font-heading;
 $lighten-intensity: 10%;
 $darken-intensity: 20%;
 
-$brand-primary: #534f97;
+$brand-primary: #074A74;
 $brand-primary-light: lighten($brand-primary, 10%);
 $brand-primary-dark: darken($brand-primary, 10%);
 $brand-primary-extralight: lighten($brand-primary, 15%);
 $brand-primary-extradark: darken($brand-primary, 15%);
 
-$brand-secondary: #a55efa;
+$brand-secondary: #1B90BF;
 $brand-secondary-light: lighten($brand-secondary, 10%);
 $brand-secondary-dark: darken($brand-secondary, 10%);
 
-$brand-success: #97ba54;
-$brand-info: #446eb5;
-$brand-warning: #f0ad4e;
-$brand-danger: #d9534f;
+$brand-success: #6db868;
+$brand-info: #4693A7;
+$brand-warning: #f39447;
+$brand-danger: #e52e5f;
 
 $brand-black: #000000;
 $brand-white: #ffffff;
-$brand-gray: #57575b;
-$brand-lightgray: #f8f8f8;
+$brand-gray: #333333;
+$brand-lightgray: #F6F6F6;
 
 $gray-base: $brand-gray;
 $gray-darker:            darken($gray-base, $darken-intensity*2);
@@ -49,19 +49,21 @@ $gray-lighter:           lighten($gray-base, $lighten-intensity*6);
 $brand-background: #ffffff;
 $brand-secondary-background: $brand-lightgray;
 
-$text-color: $gray-base;
+$text-color: #0C2C40;
 $headings-color: $brand-primary;
 $headings-small-color: $brand-primary;
 $headings-secondary-color: $brand-primary;
 $headings-extra-color: $brand-gray;
 
 // Frontpage elements
-$btn-main-bg: $brand-secondary;
+$btn-main-bg: $brand-success;
 $btn-main-color: $brand-white;
-$btn-main-active-bg: $brand-secondary-light;
+$btn-main-active-bg: lighten($brand-success, 10%);
 $btn-main-active-color: $brand-white;
 
 $category-box-bg: $brand-white;
+$category-box-text-color: $brand-secondary;
+$category-box-count-color: $brand-secondary;
 $category-box-text-color: $brand-primary;
 $category-box-count-color: $brand-primary;
 $stats-text-color: $brand-white;
@@ -83,7 +85,7 @@ $showcase-card-bg: $brand-primary;
 $showcase-card-heading-color: $brand-white;
 $showcase-card-text-color: $brand-white;
 
-$latest-bg: $brand-primary;
+$latest-bg: linear-gradient(130deg, $brand-primary, $brand-secondary);
 
 // Button
 $btn-font-weight: 100;
@@ -105,11 +107,10 @@ $card-border-color-active: $gray-light;
 
 // Navigation
 $navbar-background-color: #f8f8f8;
-$notificationbar-bg: $brand-info;
+$notificationbar-bg: $brand-success;
 $notificationbar-text-color: $brand-white;
 $notificationbar-height: $base + 24px;
 $navbar-height: 60px;
-$navbar-collapse-max-height: 500px;
 $navbar-margin-bottom: 0;
 $nav-link-hover-bg: transparent;
 
@@ -121,24 +122,24 @@ $navbar-toggle-color: $brand-primary;
 $navbar-toggle-color-active: lighten($navbar-toggle-color, 30%);
 
 $navbar-secondary-border-color: $brand-lightgray;
-$navbar-secondary-bg: $brand-primary;
+$navbar-secondary-bg: $brand-success;
 $navbar-secondary-link-color: $brand-white;
 $navbar-secondary-link-active-color: $brand-white;
 $navbar-secondary-link-active-border-color: transparent;
-$navbar-secondary-link-hover-bg: $brand-secondary;
-$navbar-secondary-link-active-bg: $brand-secondary;
+$navbar-secondary-link-hover-bg: $navbar-secondary-bg;
+$navbar-secondary-link-active-bg: $navbar-secondary-link-hover-bg;
 $navbar-secondary-toggle-color: $brand-primary;
 $navbar-secondary-active-toggle-color: $brand-white;
 
 $navbar-default-link-color: $gray-base;
 $navbar-default-link-active-color: $brand-white;
-$navbar-default-link-active-border-color: $brand-secondary;
+$navbar-default-link-active-border-color: $brand-success;
 $navbar-default-link-hover-bg: #f0f0f0;
 $navbar-default-link-active-bg: $brand-primary;
 
 $navbar-default-link-color-desktop: $gray-base;
-$navbar-default-link-active-color-desktop: $brand-primary;
-$navbar-default-link-active-border-color-desktop: $brand-secondary;
+$navbar-default-link-active-color-desktop: $brand-success;
+$navbar-default-link-active-border-color-desktop: $brand-success;
 $navbar-default-link-hover-bg-desktop: #f0f0f0;
 $navbar-default-link-active-bg-desktop: $brand-lightgray;
 
@@ -179,6 +180,7 @@ $rating-text-color: $brand-primary;
 
 // Datavis colors
 $datavis-color-1: $brand-primary;
+$datavis-color-1-dark: $brand-primary-dark;
 $datavis-color-2: #d0db32;
 
 // Footer
