@@ -110,7 +110,7 @@ ckan_extensions:
   - ckanext-cloudstorage
   - ckanext-report
   - ckanext-ga-report
-  - ckanext-qa
+  #- ckanext-qa
   - ckanext-archiver
   - ckanext-hierarchy
   - ckanext-disqus
@@ -151,7 +151,7 @@ enabled_ckan_extensions:
     - rating
     - sixodp_routes
     - sixodp_feed
-    - qa
+    #- qa
     - archiver
     - hierarchy_display
     - hierarchy_form
@@ -191,7 +191,7 @@ AWS:
   ckan_s3_bucket: sixodp-{{ deployment_environment_id }}-datasets
   region: S3_EU_WEST
 
-recaptcha_sitekey: somesitekey
+recaptcha_sitekey: 6LdPkToUAAAAAEspCT4TXlv1JyUhucSOrtm_tWGu
 
 disqus_public_key: "{{ secret.disqus_public_key }}"
 disqus_secret_key: "{{ secret.disqus_secret_key }}"
