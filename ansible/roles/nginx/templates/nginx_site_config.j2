@@ -54,6 +54,10 @@ server {
     }
   }
 
+  location ~ ^/fi/ajankohtaista/(.*)$ {
+    return 302 /fi/$1;
+  }
+
   location = / {
     if ($arg_s = "") {
       return 302 /fi/;
