@@ -30,6 +30,13 @@ server {
     return 302 /data/fi/dataset;
   }
 
+  location ~ ^/(fi/)?dataset(/.*|)$ {
+    return 302 /data/$1dataset/$2;
+  }
+
+  location ~ ^/en/dataset(/.*|)$ {
+      return 302 /data/en_GB/dataset$1;
+  }
 
   ### WordPress
 
