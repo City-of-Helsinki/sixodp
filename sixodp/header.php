@@ -27,6 +27,7 @@
 		var locale = '<?php echo get_current_locale() ?>';
 		var locale_ckan = '<?php echo get_current_locale_ckan() ?>';
 	</script>
+	<link rel="shortcut icon" href="/assets/images/favicon.ico" />
 </head>
 
 <body <?php body_class(); ?> id="wordpress-indicator">
