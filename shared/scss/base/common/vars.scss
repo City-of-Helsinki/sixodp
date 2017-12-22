@@ -5,15 +5,18 @@ $content-padding-top-desktop: $base*18;
 
 // Borders
 $border-radius-base: 6px;
+$border-radius-medium: 8px;
 $border-radius-large: 10px;
 $border-radius-small: 3px;
 $border-base: $border-radius-base;
 $border-radius-round: 15px;
 
 // Typography
-$font: 'Open Sans',sans-serif;
-$font-heading: 'Roboto Slab',sans-serif;
+$font: 'Roboto', sans-serif;
+$font-heading: 'Roboto', sans-serif;
 $headings-font-family: $font-heading;
+
+$headings-font-weight: 400;
 
 // Brand-colors
 $lighten-intensity: 10%;
@@ -88,7 +91,7 @@ $showcase-card-text-color: $brand-white;
 $latest-bg: linear-gradient(130deg, $brand-primary, $brand-secondary);
 
 // Button
-$btn-font-weight: 100;
+$btn-font-weight: 300;
 $btn-border-radius-base: $border-radius-small;
 $btn-border-radius-small: $border-radius-small;
 $btn-border-radius-large: $border-radius-small;
@@ -104,9 +107,10 @@ $card-text-color-active: $text-color;
 $card-link-color: $brand-primary;
 $card-border-color: $gray-light;
 $card-border-color-active: $gray-light;
+$card-border-radius: $border-radius-medium;
 
 // Navigation
-$navbar-background-color: #f8f8f8;
+$navbar-default-bg: #f8f8f8;
 $notificationbar-bg: $brand-success;
 $notificationbar-text-color: $brand-white;
 $notificationbar-height: $base + 24px;
@@ -157,7 +161,7 @@ $nav-tabs-active-link-hover-border-color:   $brand-primary;
 // Navbar offcanvas
 $navbar-offcanvas-toggle-background-color: $brand-primary;
 $navbar-offcanvas-toggle-icon-color: $brand-white;
-$navbar-offcanvas-background-color: $navbar-background-color;
+$navbar-offcanvas-background-color: $navbar-default-bg;
 $navbar-offcanvas-link-background-color: transparent;
 $navbar-offcanvas-link-background-color-hover: $brand-primary-light;
 $navbar-offcanvas-link-background-color-active: $brand-primary-light;
@@ -208,7 +212,7 @@ $stages-text-color-filled: $brand-white;
 $sidebar-item-bg: $gray-lighter;
 $sidebar-item-bg--highlight: $brand-secondary;
 $sidebar-item-bg-active: $gray-light;
-$sidebar-item-bg-active--highlight: $brand-secondary-light;
+$sidebar-item-bg-active--highlight: $brand-secondary-dark;
 
 $sidebar-item-color: $text-color;
 $sidebar-item-color--highlight: $brand-white;
@@ -223,9 +227,9 @@ $breadcrumb-separator: ">";
 // Misc component colors
 $badge-background-color: $brand-primary;
 $badge-background-color-active: $brand-primary;
-$image-slider-background-color: $navbar-background-color;
+$image-slider-background-color: $navbar-default-bg;
 $label-text-color: $brand-success;
-$label-background-color: $navbar-background-color;
+$label-background-color: $navbar-default-bg;
 $media-item-background-color: $brand-background;
 $table-border-color: #dddddd;
 $topic-list-background-color: $gray-lighter;

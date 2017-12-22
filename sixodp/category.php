@@ -70,37 +70,30 @@ get_header();
           </div>
           <div class="col-md-9 col-sm-7 col-xs-12 news-content">
             <div class="cards cards--2 cards--image">
-              <?php
-              while ( have_posts() ) : the_post(); ?>
-
-              <a class="card" href="<?php the_permalink(); ?>">
-                <?php
-                  if (has_post_thumbnail( $post->ID ) ):
-                    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                  else :
-                    $image = array("/assets/images/frontpage.jpg");
-                  endif;
-                ?>
-                <div class="card-image" style="background-image: url(<?php echo $image[0]; ?>);"></div>
-                <div class="card-content">
-                  <h4 class="card-title text-left"><?php the_title(); ?></h4>
-                  <span class="card-timestamp"><?php echo parse_date(get_the_date('c')); ?></span>
-                </div>
-              </a>
-
-              <?php
-              endwhile;
-              wp_reset_postdata();
-              ?>
+              <?php while ( have_posts() ) : the_post(); ?>
+                <a class="card" href="<?php the_permalink(); ?>">
+                  <?php
+                    if (has_post_thumbnail( $post->ID ) ):
+                      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                    else :
+                      $image = array("/assets/images/frontpage.jpg");
+                    endif;
+                  ?>
+                  <div class="card-image" style="background-image: url(<?php echo $image[0]; ?>);"></div>
+                  <div class="card-content">
+                    <h4 class="card-title text-left"><?php the_title(); ?></h4>
+                    <span class="card-timestamp"><?php echo parse_date(get_the_date('c')); ?></span>
+                  </div>
+                </a>
+              <?php endwhile; ?>
             </div>
-            <div class="paginate">
-              <div class="paginate-prev">
-                <?php previous_posts_link() ?>
-              </div>
-              <div class="paginate-next">
-                <?php next_posts_link() ?>
-              </div>
-            </div>
+            <?php
+              the_posts_pagination( array(
+                'prev_text'          => '<span class="fa fa-chevron-left" title="' . __( 'Previous page', 'sixodp' ) . '"></span>',
+                'next_text'          => '<span class="fa fa-chevron-right" title="' . __( 'Next page', 'sixodp' ) . '"></span>',
+                'mid_size'  => 2
+              ) );
+            ?>
           </div>
         </div>
       </div>
