@@ -14,4 +14,4 @@ ckan_who_ini: /etc/ckan/default/who.ini
 virtualenv: /usr/lib/ckan/default
 datapusherenv: /usr/lib/ckan/datapusher
 
-rds_domain_common_part: cifyfxhkj7ma.us-east-2.rds.amazonaws.com
+rds_domain_common_part: ctrwadt9qv5f.eu-west-1.rds.amazonaws.com
