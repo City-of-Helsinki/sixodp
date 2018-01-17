@@ -15,7 +15,7 @@
   # - Restart Fetch
 
 - name: Reread supervisor
-  command: supervisorctl reread
+  command: supervisorctl update
   when: supervisor_configuration|changed
 
 - name: Ensure supervisor services
