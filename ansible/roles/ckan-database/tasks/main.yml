@@ -28,16 +28,19 @@
   
 - name: Initialize archiver database
   command: ./bin/paster --plugin=ckanext-archiver archiver init "--config={{ ckan_ini }}" chdir={{ virtualenv }}
+  when: "'ckanext-archiver' in ckan_extensions"
 
 # This can be removed after run in all environments
 - name: Migrate archiver database
   command: ./bin/paster --plugin=ckanext-archiver archiver migrate "--config={{ ckan_ini }}" chdir={{ virtualenv }}
+  when: "'ckanext-archiver' in ckan_extensions"
 
 - name: Initialize report database
   command: ./bin/paster --plugin=ckanext-report report initdb "--config={{ ckan_ini }}" chdir={{ virtualenv }}
 
 - name: Initialize QA database
   command: ./bin/paster --plugin=ckanext-qa qa init "--config={{ ckan_ini }}" chdir={{ virtualenv }}
+  when: "'ckanext-qa' in ckan_extensions"
 
 - name: Initialize Rating database
   command: ./bin/paster --plugin=ckanext-rating rating init "--config={{ ckan_ini }}" chdir={{ virtualenv }}
