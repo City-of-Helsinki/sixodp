@@ -85,18 +85,18 @@ $headings-small-color: $brand-primary;
 $headings-secondary-color: $brand-primary;
 $headings-extra-color: $brand-gray;
 
-$brand-app: $brand-success;
+$brand-app: $brand-gray;
 $brand-app-dark: darken($brand-app, 15%);
 
-$brand-dataset: $brand-danger;
+$brand-dataset: $brand-gray;
 $brand-dataset-dark: darken($brand-dataset, 15%);
 
 // Frontpage elements
 $main-logo-width: 200px;
 $hero-main-heading-color: $brand-white;
 $hero-secondary-heading-color: $brand-white;
-$hero-overlay-start: $brand-primary;
-$hero-overlay-stop: $brand-primary-extradark;
+$hero-overlay-start: $brand-primary-extralight;
+$hero-overlay-stop: $brand-primary;
 $hero-overlay-opacity-start: 0.0;
 $hero-overlay-opacity-center: 0.6;
 $hero-overlay-opacity-end: 0.9;
@@ -108,7 +108,7 @@ $btn-main-active-color: $brand-white;
 $category-box-bg: $brand-primary;
 $category-box-icon-color: $brand-white;
 $category-box-text-color: $brand-success-light;
-$category-box-count-color: $brand-primary-extralight;
+$category-box-count-color: $brand-info-extralight;
 $stats-text-color: $brand-white;
 
 $accordion-bg: $brand-bg-alt;
@@ -161,7 +161,7 @@ $card-text-color--highlight-active: $brand-danger-light;
 $card-title-secondary-color: $text-muted;
 $card-border-radius: $border-radius-medium;
 $card-star-filled: $text-color;
-$card-star-empty: $brand-success-light;
+$card-star-empty: $gray-light;
 
 // Navigation
 $navbar-default-bg: #f8f8f8;
