@@ -66,8 +66,125 @@ server {
     }
   }
 
+  ### WP Redirects
+
   location ~ ^/fi/ajankohtaista/(.*)$ {
     return 302 /fi/$1;
+  }
+
+  location ~ ^/fi/sovellukset/(.*)$ {
+    return 302 /data/fi/showcase/$1;
+  }
+
+  location ~ ^/fi/hri-projekti/verkkopalvelu/$ {
+    return 302 /fi/hri-palvelu/;
+  }
+
+  location ~ ^/fi/avaa-dataa/$ {
+    return 302 /fi/ohjeet/datan-avaajalle/;
+  }
+
+  location ~ ^/fi/avaa-dataa/miksi-avata-dataa/$ {
+    return 302 /fi/ohjeet/datan-avaajalle/;
+  }
+
+  location ~ ^/fi/datatoiveet/$ {
+    return 302 /data_request/;
+  }
+
+  location ~ ^/fi/avaa-dataa/datan-avaajan-muistilista/$ {
+    return 302 /fi/ohjeet/datan-avaajalle/datan-avaajan-pikaopas/;
+  }
+
+  location ~ ^/fi/avaa-dataa/miten-paasee-alkuun/$ {
+    return 302 /fi/ohjeet/datan-avaajalle/;
+  }
+
+  location ~ ^/fi/avaa-dataa/hrin-kriteerit-tietoaineistoille$ {
+    return 302 /fi/ohjeet/datan-avaajalle/ilmoita-aineistosi-hrin-katalogiin/;
+  }
+
+  location ~ ^/fi/ilmoita-tietoaineisto/$ {
+    return 302 /data/fi/submit-data;
+  }
+
+  location ~ ^/fi/ilmoita-uusi-sovellus/$ {
+    return 302 /data/fi/submit-showcase;
+  }
+
+  location ~ ^/fi/sovellusideat/$ {
+    return 302 /showcase_idea;
+  }
+
+  location ~ ^/fi/datatoiveet/$ {
+    return 302 /data_request;
+  }
+
+  location ~ ^/fi/mita-on-avoin-data/$ {
+    return 302 /fi/ohjeet/mita-on-avoin-data/;
+  }
+
+  location ~ ^/fi/hri-projekti/$ {
+    return 302 /fi/hri-palvelu/;
+  }
+
+  location ~ ^/fi/hri-projekti/tyon-alla/$ {
+    return 302 /tyon-alla/;
+  }
+
+  location ~ ^/fi/data-haku/$ {
+    return 302 /data/fi/dataset/;
+  }
+
+  location ~ ^/fi/hri-projekti/verkkopalvelu/ohjeita-hrin-tehokayttajalle/$ {
+    return 302 /fi/ohjeet/datan-hyodyntajalle/ohjeita-tehokayttajalle/;
+  }
+
+  location ~ ^/fi/hri-projekti/verkkopalvelu/hrin-metatietokentat/$ {
+    return 302 /fi/ohjeet/datan-hyodyntajalle/ohjeita-tehokayttajalle/;
+  }
+
+  location ~ ^/fi/group/$ {
+    return 302 /data/fi/collection/;
+  }
+
+  location ~ ^/fi/organization/$ {
+    return 302 /data/fi/organization/;
+  }
+
+  location ~ ^/fi/hri-projekti/hankkeen-osa-alueet/$ {
+    return 302 /fi/hri-palvelu/mika-hri/hrin-toimintamalli/;
+  }
+
+  location ~ ^/fi/hri-projekti/hel-loves-dev-avoin-konttori/$ {
+    return 302 /fi/hri-palvelu/datan-hyodyntajalle/kehittajayhteistyo;
+  }
+
+  location ~ ^/fi/hri-projekti/yhteistyokumppanit/$ {
+    return 302 /fi/hri-palvelu/mika-hri/;
+  }
+
+  location ~ ^/fi/hri-projekti/yhteistyokumppanit/hrin-ohjausryhman-muistiot/$ {
+    return 302 /fi/hri-palvelu/mika-hri/ohjausryhma/;
+  }
+
+  location ~ ^/fi/hri-projekti/logot/$ {
+    return 302 /fi/hri-palvelu/materiaalit-ja-logot/;
+  }
+
+
+  location ~ ^/fi/avaa-dataa/koulutusmateriaalia/$ {
+    return 302 /fi/ohjeet/datan-avaajalle/koulutusmateriaalia/;
+  }
+
+
+  location ~ ^/fi/hri-projekti/yhteystiedot/$ {
+    return 302 /fi/hri-palvelu/yhteystiedot/;
+  }
+
+
+  location ~ ^/fi/kayta-dataa/$ {
+    return 302 /fi/ohjeet/datan-hyodyntajalle/;
   }
 
   location = / {
