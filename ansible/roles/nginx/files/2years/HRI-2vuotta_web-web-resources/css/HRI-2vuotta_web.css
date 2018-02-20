@@ -1,0 +1,437 @@
+td, th {
+	border-style:solid;
+	border-width:1px;
+}
+table {
+	border-collapse:collapse;
+}
+li {
+	display:block;
+}
+body { -epub-hyphens:auto; 
+}
+p.Body--H1----9-5-12-0-5mm-90-black, p {  color:#3b3b3a; font-family:"Proxima Nova Lt", sans-serif;
+}
+p.H0-Cover--44-46-8mm {
+	-epub-hyphens:none;
+	color:#074a74;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:44px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.045;
+	margin-bottom:23px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+h1.H1-A-Title_27_2mm_90-Black, h1 {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+font-family: "proxima-nova",sans-serif;
+font-style: normal;
+font-weight: 700;
+	line-height:1.111;
+	margin-bottom:6px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+	text-transform:uppercase;
+	padding-top: 1em;
+}
+h1.H1-B-Subtitle_18_20_8mm {
+	color:#070300;
+	font-family:"Proxima Nova Lt", sans-serif;
+	font-size:18px;
+	font-style:normal;
+	font-weight:300;
+	line-height:1.111;
+	margin-bottom:23px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+	text-transform:uppercase;
+}
+h2.H2-A_Header_18_3_2mm, h2 {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:18px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.2;
+	margin-bottom:11px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+p.Lead-18-20-8mm {
+	-epub-hyphens:none;
+	color:#000000;
+	font-family:"Proxima Nova Lt", sans-serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.429;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+h2.H2-B_Subtitle_14_14_2mm {
+	-epub-hyphens:none;
+	color:#575656;
+	font-family:"Proxima Nova Lt", sans-serif;
+	font-size:1.5em;
+	font-style:normal;
+	font-weight:300;
+	line-height:1.4;
+	margin-bottom:3px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+	text-transform:uppercase;
+}
+h3.H3_Header_14_14_2_4mm, h3 {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:1.3em;
+
+}
+
+p.Timeline-Title {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.2;
+	margin-bottom:6px;
+	margin-left:11px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:-11px;
+}
+p.Image-Caption {
+
+	color:#6f6f6e;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:0.8em;
+
+}
+p.Quote-3 {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:16px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:normal;
+	line-height:1.25;
+	margin-bottom:6px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:11px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+p.Lead--Lighter- { -epub-hyphens:none; color:#575656; font-family:"Proxima Nova Lt", sans-serif; font-size:1.7em; font-style:normal; font-variant:normal; font-weight:300; 
+line-height: 1.3em;  }
+li.End-Mark {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.2;
+	margin-bottom:6px;
+	margin-left:11px;
+	margin-right:0px;
+	margin-top:6px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:-11px;
+}
+p.Quote---in-text {
+	-epub-hyphens:none;
+	color:#6f6f6e;
+	font-family:"Proxima Nova Lt", sans-serif;
+	font-size:1.4em;
+
+}
+p.Timeline-Body7-6-white {
+	-epub-hyphens:none;
+	color:#333333;
+	font-family:"Proxima Nova Lt", sans-serif;
+	font-size:8px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:300;
+	line-height:1.2;
+	margin-bottom:6px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+h1.Vingette {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.429;
+	margin-bottom:6px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:11px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+h2.Vingette {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:14px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.429;
+	margin-bottom:6px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:11px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+li.End-Mark-Green {
+	-epub-hyphens:none;
+	color:#3b3b3a;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:10px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:1.2;
+	margin-bottom:6px;
+	margin-left:11px;
+	margin-right:0px;
+	margin-top:6px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:-11px;
+}
+p.Infograph-Year {
+	-epub-hyphens:none;
+	color:#ec698c;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-size:30px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:0.4;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:1px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+}
+p.Front-page-header {
+	-epub-hyphens:none;
+	color:#f5a96c;
+	font-family:"Proxima Nova Lt", sans-serif;
+	font-size:18px;
+	font-style:normal;
+	font-weight:300;
+	line-height:1.2;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	text-align:left;
+	text-decoration:none;
+	text-indent:0px;
+	text-transform:uppercase;
+}
+span.Color--Green {
+	color:#6db868;
+}
+span.Color--Orange {
+	color:#f39447;
+}
+span.Link {
+	color:#1b90bf;
+	font-style:normal;
+	font-weight:bold;
+}
+
+
+span.Bold {
+	color:#0c2c40;
+	font-style:normal;
+	font-weight:bold;
+}
+span.Color--Blue {
+	color:#1b90bf;
+}
+span.End-Mark {
+	color:#ef829f;
+	font-size:23px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.Bold---white {
+	color:#0c2c40;
+	font-style:normal;
+	font-weight:bold;
+}
+span.Color--Pink {
+	color:#ef829f;
+}
+span.End-Mark-green {
+	color:#8ac686;
+	font-size:23px;
+	font-style:normal;
+	font-weight:bold;
+}
+span.Pink-Bold {
+	color:#ea587f;
+	font-style:normal;
+	font-weight:bold;
+}
+span.LInk {
+	color:#1b90bf;
+	font-style:normal;
+	font-weight:bold;
+	text-decoration:underline;
+}
+span.char-style-override-3 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#1b90bf;
+}
+span.char-style-override-4 {
+	font-size:9.567em;
+	float:left;
+	line-height:1;
+	margin-top:-0.121em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	font-family:"Proxima Nova Rg", sans-serif;
+	font-weight:normal;
+	font-style:normal;
+
+}
+span.char-style-override-5 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#f39447;
+}
+span.char-style-override-1 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#6db868;
+}
+span.char-style-override-7 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#ef829f;
+}
+span.char-style-override-9 {
+	font-size:4.748em;
+	float:left;
+	line-height:1;
+	margin-top:-0.121em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#ef829f;
+}
+span.char-style-override-10 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#fad4b5;
+}
+span.char-style-override-11 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#ea587f;
+}
+span.char-style-override-13 {
+	font-size:4.534em;
+	float:left;
+	line-height:1;
+	margin-top:-0.125em;
+	margin-right:0.05em;
+	-adobe-float-keep:column;
+	margin-bottom:-0.21em;
+	color:#e52e5f;
+}

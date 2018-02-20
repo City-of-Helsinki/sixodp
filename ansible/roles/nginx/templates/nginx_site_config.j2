@@ -17,6 +17,14 @@ server {
     root {{ static_path }};
   }
 
+  location ~ ^/2vuotta {
+      root {{ static_path }}/;
+  }
+
+  location ~ ^/2years {
+        root {{ static_path }}/;
+  }
+
   ### CKAN
 
   location /data/ {

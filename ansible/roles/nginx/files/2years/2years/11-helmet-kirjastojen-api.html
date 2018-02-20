@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Helsinki Region Infoshare - 2 vuotta avointa julkista dataa</title>
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  
+  <link rel="stylesheet" href="css/foundation.css" />
+  
+  <script type="text/javascript" src="//use.typekit.net/ptd3kgm.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+<link href="HRI-2vuotta_web-web-resources/css/HRI-2vuotta_web.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18949778-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fi_FI/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="row">
+		<div class="large-12 columns">
+	    <ul class="button-group">
+        <li><a class="small button secondary" style="margin-bottom: 0;" href="index.html">Index</a></li>
+        <li><a class="small button secondary" style="margin-bottom: 0;" href="10-paakaupunkiseudun-avoin-paikkatieto.html">Previous</a></li>
+        <li><a class="small button secondary" style="margin-bottom: 0;" href="12-maanmittauslaitoksen-kartat.html">Next</a></li>
+      </ul>
+	    <h1>HELMET LIBRARIES’ API</h1>
+	    <hr />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-8 columns"><!-- Grid Example -->
+		  <div class="row">
+				<div class="large-12 columns">
+				  <div class="Basic-Text-Frame">
+				    <div class="Basic-Text-Frame">
+				      <div class="Basic-Text-Frame">
+				        <p class="Body--H3----8-10--blue"><span class="Bold">Text</span> Petja Partanen</p>
+			          </div>
+                      <div class="Basic-Text-Frame">
+                        <p class="Lead--Lighter-">The libraries of the Helsinki Metropolitan Area have created an open data interface containing the data of more than 3 million books and other materials. The libraries hope that the interface will inspire new mobile services – and also speed up the development of libraries’ own IT systems.</p>
+                      </div>
+                      <div class="Basic-Text-Frame">
+                        <p class="Body--H1----9-5-12-0-5mm-90-black">For a long time, libraries have been forerunners in utilising information technology, but their closed IT systems have kept the information hidden, for instance, from the users of search engine Google. Frustrated over the issue, frontman of the <a href="labs.kirjastot.fi"><span class="Link">Labs.kirjastot.fi</span></a> project <span class="Bold">Antti Pakarinen</span> proposed as early as 2008 that library data should be unlocked. This way the small-time developer workshops, who make use of open source, could challenge the big suppliers of library IT systems.</p>
+                        <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black">In 2009, the Ministry of Education and Culture, enthusiastic about the issue, granted 120,000 euro for the project.</p>
+                        <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black">Now the library collection data of the cities of Helsinki, Espoo, Vantaa and Kauniainen has been unlocked as the first major European public library. What is more, the libraries themselves have programmed an iPhone application for browsing the collections, and independent developers have created an Android app with a barcode search.</p>
+                        <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black">According to Antti Pakarinen, the libraries had higher expectations from the unlocking of their data: more new applications had been anticipated. In retrospect, the original hope of having small and agile developers working alongside the present system suppliers seems slightly over-optimistic. For instance, public procurement regulations pose some obstacles to the acquisition of the IT systems from small-time programmers.</p>
+                        <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black">But there seems to be light at the end of the tunnel. The data opening of 2011 required quite a lot of programming since the present version of the library data system does not offer tools for unlocking data. In the future version of the database, the open interface should exist as a standard. Another cause for celebration is the <strong><a href="http://www.kdk.fi/en">National Digital Library of Finland</a></strong>, which will be built with open source tools.                        </p>
+                        <p class="Quote---in-text"><span class="char-style-override-3">“</span><span class="Body_Body--H1--–-9-5-12-0-5mm-90-black">The world is changing for the better, little by little</span>”</p>
+                        <p class="Body--H1----9-5-12-0-5mm-90-black"></p>
+                        <h2 class="H2-A_Header_18_3_2mm"><span class="Headers_H2-A-Header--18--3-2mm">Library API interface </span></h2>
+                        <p class="H2-A_Header_18_3_2mm"><span class="CharOverride-8">Through the HelMet programming interface, anyone can inquire and use the collection data of the Helsinki Metropolitan Area libraries. The user can choose for the search results to be shown in either a JSON or a <strong><a href="http://en.wikipedia.org/wiki/MARC_standards">MarcXMLformat</a></strong>.</span></p>
+                        <h2 class="H2-A_Header_18_3_2mm"><a href="http://data.kirjastot.fi"><span class="Link char-style-override-19">http://data.kirjastot.fi</span></a><span class="Link char-style-override-19">/</span></h2>
+                        <p class="Body--H1----9-5-12-0-5mm-90-black">Supplier:<span class="Link"> </span><a href="http://kiskolabs.com/"><span class="Link">Kisko Labs</span></a><span class="Link"></span></p>
+                        <p class="Body--H1----9-5-12-0-5mm-90-black"><span class="Link"></span></p>
+                      </div>
+                      <div class="frame-2"> <img class="frame-31" src="HRI-2vuotta_web-web-resources/image/Android-sovellus_fmt.png" alt="Android-sovellus.png" /> </div>
+                      <div class="Basic-Text-Frame">
+                        <h2 class="H2-A_Header_18_3_2mm">&nbsp;</h2>
+                      </div>
+                      
+                               <div class="fb-like" data-href="http://www.hri.fi/2vuotta/11-helmet-kirjastojen-api.html" data-send="true" data-width="200" data-show-faces="true"></div>
+         <a href="https://twitter.com/share" class="twitter-share-button" data-lang="eng">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<p class="Body--H3----8-10--blue"><span class="End-Mark-Green"><span class="End-Mark-green char-style-override-21">•</span></span></p>
+
+<p>The texts of the publication are licensed under the '<a href="http://www.hri.fi/lisenssit/hri-nimea/" target="_blank">HRI-nimeä</a>' attribution. All reuse of the material must be accompanied by the name  of the author (Petja Partanen or Terhi Upola) and the publisher  (<a href="http://www.hri.fi/">Helsinki Region Infoshare</a>). </p>
+				    </div>
+				  </div>
+				  <div class="Basic-Text-Frame"> </div>
+				</div>
+			</div>
+			<div class="row"></div>
+			<div class="row"></div>
+</div>
+
+		<div class="large-4 columns">
+		  <div class="Basic-Text-Frame">
+		    <h2 class="H2-A_Header_18_3_2mm">This is how the data was opened</h2>
+	      </div>
+          <div class="Basic-Text-Frame">
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black"><span class="Bold---white">2008 </span><span class="Color--White">Antti Pakarinen, a project manager at the Helsinki City Library, becomes frustrated with the awkward information systems of the municipal libraries and suggests opening the library data for free use by open source developers. </span></p>
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black"><span class="Bold---white">Spring 2009 </span><span class="Color--White"> The Labs.kirjastot.fi project is launched. The project, funded by the Ministry of Education, seeks to build prototypes for new library services with agile development methods. </span></p>
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black _idGenParaOverride-1"><span class="Bold---white">June 2010</span><span class="Color--White"> The first data opening consists of the metadata of 680,000 works. “There had been a lot of talk about this previously, but we were the first major public library in Europe to open its data to the public.”</span></p>
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black"><span class="Bold---white">October 2010</span><span class="Color--White"> The Helmet barcode scanner using the collection data received an award in the Apps4Finland contest. “It was a really important thing for us and it showed us what could be achieved through opening data.”</span></p>
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black"><span class="Bold---white">June 2011 </span><span class="Color--White">An application programming interface to the library data is opened.</span></p>
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black"><span class="Bold---white">September 2011 </span><span class="Color--White">The libraries of Southwest Finland open their collection data on the site data.kirjastot.fi. </span></p>
+            <p class="Body_Body--H1--–-9-5-12-0-5mm-90-black"><span class="Bold---white">January 2012</span><span class="Color--White"> An outdoor poster campaign in Helsinki, designed to promote public awareness about open data and visualisation, uses library loan statistics to portray the popularity of the most borrowed books in the public libraries. </span>            </p>
+            <p class="Body--H1----9-5-12-0-5mm-90-black"><span class="Color--White"></span></p>
+          </div>
+          <div class="Basic-Text-Frame">
+            <h2 class="H2-A_Header_18_3_2mm"><span class="Headers_H2-A-Header--18--3-2mm">Who made it happen?</span></h2>
+            <p class="H2-A_Header_18_3_2mm"><span class="Bold char-style-override-19">Antti Pakarinen </span><span class="char-style-override-19">ja</span><span class="Bold char-style-override-19"> Timo Tuominen<br />
+            </span><span class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-8">Designers in the </span><span class="Link CharOverride-9">Labs.kirjastot.fi</span><span class="CharOverride-8"> project. Kirjastot.fi is the joint web service of public libraries, funded by the Ministry of Education and Culture.</span></span></p>
+            <h2 class="H2-A_Header_18_3_2mm"><span class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-25">What did it cost?</span></span></h2>
+            <p><span class="CharOverride-8">”Building the interface cost about 15 000 euro.”</span></p>
+            <h2 class="H2-A_Header_18_3_2mm para-style-override-10"><span class="CharOverride-25">Tips for those planning to open their data</span></h2>
+            <p class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-8">1. ”Go ahead and publish. The data doesn’t have to be perfect. We have 670,000 records, and who cares if a few dozen of them contain typing errors.”</span></p>
+            <p class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-8">2. ”The data that you plan to open does not have to be something that someone needs. It can also be something that just makes the city more fun.”</span></p>
+            <h2 class="H2-A_Header_18_3_2mm para-style-override-11"><span class="CharOverride-25">Why is unlocking data important?</span></h2>
+            <p class="Quote---in-text"><span class="char-style-override-5 Color--Orange">“</span><span class="Additional_Quote---in-text">It may speed up the development of public IT systems</span>.”</p>
+          </div>
+          <div class="frame-2"> <img class="frame-32" src="HRI-2vuotta_web-web-resources/image/KirjastonAPI_fmt.png" alt="KirjastonAPI.png" /></div>
+          <div>
+            <h2 class="H2-A_Header_18_3_2mm"><span class="Headers_H2-A-Header--18--3-2mm">Where is the data used?</span></h2>
+            <h2 class="H2-A_Header_18_3_2mm para-style-override-10"><span class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-25">HelMet barcode scanner</span></span></h2>
+            <p class="H2-A_Header_18_3_2mm"><a href="https://play.google.com/store/apps/details?id=org.apps4fi.HelMet"><span class="Link char-style-override-19">An Android application</span></a><span class="char-style-override-18">, <span class="CharOverride-8"> with a barcode scanner that helps you to quickly identify the nearest library where a particular book is available.</span></span></p>
+            <h2 class="H2-A_Header_18_3_2mm para-style-override-10"><span class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-25">HelMet pocket Library</span></span></h2>
+            <p class="H2-A_Header_18_3_2mm"><span class="char-style-override-18"><span class="Headers_H2-A-Header--18--3-2mm"><span class="CharOverride-8">A mobile service for<a href="https://itunes.apple.com/fi/app/helmet-taskukirjasto/id558819114"><strong> iPhone</strong></a> and <a href="https://play.google.com/store/apps/details?id=com.taiste.lainari"><span class="Link char-style-override-19">Android</span></a> phones. It allows you to renew loans, reserve books and other works and search the HelMet libraries’ collection. The app also has a function that enables the user to borrow books and records directly from a friend, without visiting the library..</span></span></span></p>
+          </div>
+          <p class="Body--H3----8-10--blue"></p>
+          <div class="Basic-Text-Frame">
+          </div>
+          <p class="Quote---in-text">&nbsp;</p><div class="Basic-Text-Frame">
+		</div>
+	  </div>
+	</div>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+  <!--
+  
+  <script src="js/foundation/foundation.js"></script>
+  
+  <script src="js/foundation/foundation.dropdown.js"></script>
+  
+  <script src="js/foundation/foundation.placeholder.js"></script>
+  
+  <script src="js/foundation/foundation.forms.js"></script>
+  
+  <script src="js/foundation/foundation.alerts.js"></script>
+  
+  <script src="js/foundation/foundation.magellan.js"></script>
+  
+  <script src="js/foundation/foundation.reveal.js"></script>
+  
+  <script src="js/foundation/foundation.tooltips.js"></script>
+  
+  <script src="js/foundation/foundation.clearing.js"></script>
+  
+  <script src="js/foundation/foundation.cookie.js"></script>
+  
+  <script src="js/foundation/foundation.joyride.js"></script>
+  
+  <script src="js/foundation/foundation.orbit.js"></script>
+  
+  <script src="js/foundation/foundation.section.js"></script>
+  
+  <script src="js/foundation/foundation.topbar.js"></script>
+  
+  -->
+  
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

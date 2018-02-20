@@ -19,6 +19,15 @@
   with_items:
     - { "src": "50x.html", "dest": "50x.html" }
 
+- name: Copy static directories
+  synchronize:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { "src": "2vuotta", "dest": "{{ static_path }}"}
+    - { "src": "2years", "dest": "{{ static_path }}"}
+
+
 - name: Ensure static file permissions
   command: chmod -R "0775" "{{ static_path }}"
 
