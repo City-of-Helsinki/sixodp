@@ -76,7 +76,26 @@
   </div>
 
   <div class="logos">
+    <span class="logos-links desktop-only">
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Helsinki">Helsinki</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Espoo">Espoo</a>
+    </span>
     <a href="<?php echo site_url(); ?>" class="logo--brand">
       <img src="<?php echo assets_url(); ?>/images/hero_logo.png" />
     </a>
+    <span class="logos-links desktop-only">
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Vantaa">Vantaa</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Kauniainen">Kauniainen</a>
+    </span>
+    <div class="mobile-only">
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Helsinki">Helsinki</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Espoo">Espoo</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Vantaa">Vantaa</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Kauniainen">Kauniainen</a>
+    </div>
   </div>
