@@ -25,12 +25,58 @@ $relative-logo-position: 3/6;
 }
 
 .logo--brand {
-  width: 100%;
+  width: auto;
   text-align: left;
-  display: block;
+  display: inline-block;
+  margin: 0;
 
   @media(min-width: $grid-float-breakpoint) {
     text-align: center;
+    margin: 0 $padding-large-horizontal*2;
+  }
+}
+
+.logos-links {
+  width: 300px;
+  text-align: center;
+  display: inline-block;
+}
+
+.logos-link {
+  display: inline-block;
+  margin: $padding-large-vertical*4 2px 0 2px;
+  opacity: 0.8;
+  color: $brand-white;
+  font-size: $font-size-base;
+  font-weight: $headings-font-weight;
+  font-family: $headings-font-family;
+  letter-spacing: $letter-spacing-xs;
+
+  @media(min-width: $grid-float-breakpoint) {
+    margin-left: $padding-large-horizontal;
+    margin-right: $padding-large-horizontal;
+    font-size: $font-size-large;
+    color: #4D4F4F;
+    letter-spacing: $letter-spacing;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: $brand-white;
+
+    @media(min-width: $grid-float-breakpoint) {
+      color: #4D4F4F;
+    }
+  }
+}
+
+.logos-separator {
+  color: $brand-info;
+  font-size: $font-size-base;
+  display: inline-block;
+
+  @media(min-width: $grid-float-breakpoint) {
+    font-size: $font-size-large;
   }
 }
 

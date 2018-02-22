@@ -34,8 +34,27 @@
     </div>
   {% endblock %}
   <div class="logos">
+    <span class="logos-links desktop-only">
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Helsinki' %}">Helsinki</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Espoo' %}">Espoo</a>
+    </span>
     <a href="{{ h.url('home') }}" class="logo--brand">
       <img src="/assets/images/main_logo.png" alt="Site logo" />
     </a>
+    <span class="logos-links desktop-only">
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Vantaa' %}">Vantaa</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Kauniainen' %}">Kauniainen</a>
+    </span>
+    <div class="mobile-only">
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Helsinki' %}">Helsinki</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Espoo' %}">Espoo</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Vantaa' %}">Vantaa</a>
+      <span class="logos-separator">&#8226;</span>
+      <a class="logos-link" href="{% url_for controller='package', action='search', vocab_geographical_coverage='Kauniainen' %}">Kauniainen</a>
+    </div>
   </div>
 {% endblock %}

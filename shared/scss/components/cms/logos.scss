@@ -44,19 +44,20 @@ $relative-logo-position: 3/6;
 
 .logos-link {
   display: inline-block;
-  margin: $padding-large-vertical*4 $padding-base-horizontal 0 $padding-base-horizontal;
+  margin: $padding-large-vertical*4 2px 0 2px;
   opacity: 0.8;
   color: $brand-white;
   font-size: $font-size-base;
   font-weight: $headings-font-weight;
   font-family: $headings-font-family;
-  letter-spacing: $letter-spacing;
+  letter-spacing: $letter-spacing-xs;
 
   @media(min-width: $grid-float-breakpoint) {
     margin-left: $padding-large-horizontal;
     margin-right: $padding-large-horizontal;
     font-size: $font-size-large;
     color: #4D4F4F;
+    letter-spacing: $letter-spacing;
   }
 
   &:hover {
