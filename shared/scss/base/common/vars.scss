@@ -39,12 +39,12 @@ $brand-secondary-extradark: darken($brand-secondary, 15%);
 
 $brand-success: #8AC686;
 $brand-success-light: lighten($brand-success, 10%);
-$brand-success-dark: darken($brand-success, 10%);
+$brand-success-dark: #6FBF6C;
 $brand-success-extralight: lighten($brand-success, 25%);
 $brand-success-extradark: darken($brand-success, 15%);
 
 $brand-info: #4693A7;
-$brand-info-light: lighten($brand-info, 10%);
+$brand-info-light: #4895A7;
 $brand-info-dark: darken($brand-info, 10%);
 $brand-info-extralight: lighten($brand-info, 35%);
 $brand-info-extradark: darken($brand-info, 15%);
@@ -79,9 +79,9 @@ $brand-bg-alt: $brand-lightgray;
 
 $text-color: $gray-base;
 $text-muted: $gray;
-$headings-color: $brand-primary;
+$headings-color: $brand-success-dark;
 $headings-muted-color: $gray;
-$headings-small-color: $brand-primary;
+$headings-small-color: $brand-success-dark;
 $headings-secondary-color: $brand-primary;
 $headings-extra-color: $brand-gray;
 
@@ -233,8 +233,8 @@ $filter-color: $gray;
 $filter-color-active: $gray;
 
 // Links
-$link-color: $brand-primary;
-$link-color-active: lighten($link-color, 20%);
+$link-color: $brand-info-light;
+$link-color-active: lighten($link-color, 10%);
 $link-secondary-color: $brand-success;
 $link-secondary-color-active: lighten($link-secondary-color, 20%);
 
