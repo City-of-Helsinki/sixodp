@@ -54,6 +54,7 @@ a {
 .heading-content {
   @extend .heading-main;
   margin-top: 0;
+  color: $brand-info-light;
 }
 
 .heading-page {
@@ -111,4 +112,13 @@ a {
   letter-spacing: 1px;
   text-transform: none;
   font-weight: 500;
+}
+
+::selection {
+  background: $brand-danger;
+  color: $brand-white;
+}
+::-moz-selection {
+  background: $brand-danger;
+  color: $brand-white;
 }
