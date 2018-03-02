@@ -1,11 +1,11 @@
 ---
 
-public_facing_hostname: hri.dataportaali.com
+public_facing_hostname: hri.fi
 internal_hostname: sixodp-{{ deployment_environment_id }}
 cms_site_url: localhost
 ckan_internal_host: 127.0.0.1:8080
 ckan_internal_url: "{{ 'http://' + ckan_internal_host }}"
-ckan_site_name: Dataportaali
+ckan_site_name: hri.fi
 
 # Sets featured orgs in ckan.ini but not actually used in anything
 ckan_featured_orgs:
@@ -56,7 +56,7 @@ mysql:
 nginx:
   use_ssl_certificate: true
   use_selfsigned_certificate: true
-  fqdn_common_part: dataportaali.com
+  fqdn_common_part: hri.fi
 
 acmetool_hostnames:
   - "{{ public_facing_hostname }}"
