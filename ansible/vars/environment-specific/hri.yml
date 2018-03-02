@@ -58,8 +58,8 @@ nginx:
   use_selfsigned_certificate: true
   fqdn_common_part: hri.fi
 
-acmetool_hostnames:
-  - "{{ public_facing_hostname }}"
+#acmetool_hostnames:
+#  - "{{ public_facing_hostname }}"
 
 solr:
   host: 127.0.0.1
