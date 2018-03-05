@@ -61,6 +61,7 @@ nginx:
 acmetool_hostnames:
   - "{{ public_facing_hostname }}"
   - "hri.dataportaali.com"
+  - "www.hri.fi"
 
 solr:
   host: 127.0.0.1
