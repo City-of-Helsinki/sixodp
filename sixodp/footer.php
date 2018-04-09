@@ -74,6 +74,7 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
+<?php include('snoobi-config.php') ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -298,3 +298,8 @@ def get_search_tags(facets_dict, visible_fields):
             tags[field] = facets_dict.get('fields').get(field)
 
     return tags
+
+def snoobi_activated():
+    activated = config.get('ckanext.snoobi_activated', False)
+
+    return activated

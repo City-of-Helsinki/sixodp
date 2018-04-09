@@ -34,6 +34,13 @@
 })(window,document,'script','dataLayer','GTM-W9PV285');</script>
 <!-- End Google Tag Manager -->
 
+  {% if h.snoobi_activated() %}
+    <!-- BEGIN Snoobi v1.4 -->
+    <script type="text/javascript" src="http://eu1.snoobi.com/snoop.php?tili=hel_fi_hki_tieke"></script>
+    <!-- END Snoobi v1.4 -->
+  {% endif %}
+
+
 {% endblock -%}
 
 {% block styles %}{% endblock %}
