@@ -247,6 +247,8 @@ class Sixodp_UiPlugin(plugins.SingletonPlugin, DefaultTranslation):
             'build_nav_main': helpers.build_nav_main,
             'get_search_tags': helpers.get_search_tags,
             'snoobi_activated': helpers.snoobi_activated
+            'get_all_groups': helpers.get_all_groups,
+            'get_single_group': helpers.get_single_group
         }
 
     def before_search(self, search_params):
