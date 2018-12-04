@@ -56,6 +56,7 @@ a {
   @extend .heading-main;
   margin-top: 0;
   color: $brand-info-light;
+  word-break: break-word;
 }
 
 .heading-page {
