@@ -62,6 +62,7 @@ acmetool_hostnames:
   - "{{ public_facing_hostname }}"
   - "hri.dataportaali.com"
   - "www.hri.fi"
+  - "phppgadmin.{{ public_facing_hostname }}"
 
 solr:
   host: 127.0.0.1
@@ -127,6 +128,7 @@ ckan_extensions:
   - ckanext-sixodp_harvester
   - ckanext-sixodp_showcasesubmit
   - ckanext-googleanalytics
+  - ckanext-geoview
 
 # List of enabled CKAN extensions in load order. Order matters, when templates call super()
 enabled_ckan_extensions:
@@ -168,6 +170,8 @@ enabled_ckan_extensions:
     - csw_harvester
     - sixodp_harvester
     - sixodp_showcasesubmit
+    - resource_proxy
+    - geo_view
 
 # If AWS is used, these extensions are enabled in CKAN
 enabled_ckan_aws_extensions: cloudstorage
