@@ -15,7 +15,7 @@
 if ($_GET['date']) {
   $date = strtotime($_GET['date']);
 }
-else $date = strtotime("-1 month");
+else $date = strtotime("-2 week");
 
 $date = date('d.m.Y', $date);
 
@@ -90,9 +90,9 @@ get_header(); ?>
       <?php
       $updates = get_latest_updates($types, $date, false);
       if (sizeof($updates) == 0) { ?>
-        <h3 class="heading-sidebar text-center"><?php echo sprintf(__('No updates found between %1$s and %2$s.', 'sixodp'), $date, date('d.m.Y', strtotime($date ."+1 month"))); ?></h3>
+        <h3 class="heading-sidebar text-center"><?php echo sprintf(__('No updates found between %1$s and %2$s.', 'sixodp'), $date, date('d.m.Y', strtotime($date ."+2 week"))); ?></h3>
       <?php } else { ?>
-          <h3 class="heading-sidebar text-center"><?php echo sprintf(__('Updates between %1$s and %2$s.', 'sixodp'), $date, date('d.m.Y', strtotime($date ."+1 month"))); ?></h3>
+          <h3 class="heading-sidebar text-center"><?php echo sprintf(__('Updates between %1$s and %2$s.', 'sixodp'), $date, date('d.m.Y', strtotime($date ."+2 week"))); ?></h3>
       <ul class="items-list">
 
       <?php foreach ( $updates as $index => $item ) :
@@ -138,8 +138,8 @@ get_header(); ?>
 
       <div class="navigation pagination">
         <div class="nav-links">
-          <?php echo '<a href="'. $uri['path'] .'?'. http_build_query(array_merge($args, array('date' => date('Y-m-d', strtotime($date .'- 1 MONTH'))))) .'" class="next page-numbers"><span class="fa fa-chevron-left" title="Edellinen"></span></a>'; ?>
-          <?php if ($date != date('Y-m-d', strtotime('last monday'))) echo '<a href="'. $uri['path'] .'?'. http_build_query(array_merge($args, array('date' => date('Y-m-d', strtotime($date .'+ 1 MONTH'))))) .'" class="prev page-numbers"><span class="fa fa-chevron-right" title="Seuraava"></span></a>'; ?>
+          <?php echo '<a href="'. $uri['path'] .'?'. http_build_query(array_merge($args, array('date' => date('Y-m-d', strtotime($date .'- 2 week'))))) .'" class="next page-numbers"><span class="fa fa-chevron-left" title="Edellinen"></span></a>'; ?>
+          <?php if ($date != date('Y-m-d', strtotime('last monday'))) echo '<a href="'. $uri['path'] .'?'. http_build_query(array_merge($args, array('date' => date('Y-m-d', strtotime($date .'+ 2 week'))))) .'" class="prev page-numbers"><span class="fa fa-chevron-right" title="Seuraava"></span></a>'; ?>
         </div>
       </div>
     </div>
