@@ -148,7 +148,7 @@ enabled_ckan_extensions:
     - fluent
     - report
     - publisher_activity_report
-    - rating
+    # - rating
     - sixodp_routes
     - sixodp_feed
     #- qa
