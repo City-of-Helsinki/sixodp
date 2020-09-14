@@ -50,7 +50,8 @@
   <?php $notifications = get_posts(array('post_type' => 'notification')); ?>
   <?php $extra_classes = count($notifications) > 0 ? ' has-notification' : '' ?>
   <div class="nav-wrapper<?php echo $extra_classes ?>">
-    <?php $notifications = get_posts(array('post_type' => 'notification')); ?>
+
+      <?php $notifications = get_posts(array('post_type' => 'notification')); ?>
     <?php if ( count($notifications) > 0 && ($notifications[0]->post_title !== '' || $notifications[0]->post_content !== '') ) : ?>
       <?php
         $type = get_post_meta( $notifications[0]->ID, 'type', true );
@@ -75,15 +76,13 @@
     <?php require_once('partials/nav.php'); ?>
   </div>
 
-  <div class="logos">
+  <div class="logos" role="banner">
     <span class="logos-links desktop-only">
       <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Helsinki">Helsinki</a>
       <span class="logos-separator">&#8226;</span>
       <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Espoo">Espoo</a>
     </span>
-    <a href="<?php echo site_url(); ?>" class="logo--brand">
-      <img src="<?php echo assets_url(); ?>/images/hero_logo.png" />
-    </a>
+      <img src="<?php echo assets_url(); ?>/images/hero_logo.png"  alt="<?php _e('Home', 'sixodp') ?>"/>
     <span class="logos-links desktop-only">
       <a class="logos-link" href="<?php echo CKAN_BASE_URL; ?>/<?php echo get_current_locale_ckan(); ?>/dataset?vocab_geographical_coverage=Vantaa">Vantaa</a>
       <span class="logos-separator">&#8226;</span>
