@@ -28,18 +28,18 @@ $darken-intensity: 20%;
 $brand-primary: #074A74;
 $brand-primary-light: lighten($brand-primary, 10%);
 $brand-primary-dark: darken($brand-primary, 10%);
-$brand-primary-extralight: lighten($brand-primary, 15%);
+$brand-primary-extralight: #DAE9ED;
 $brand-primary-extradark: darken($brand-primary, 15%);
 
-$brand-secondary: #8AC686;
+$brand-secondary: #488444;
 $brand-secondary-light: lighten($brand-secondary, 10%);
 $brand-secondary-dark: darken($brand-secondary, 10%);
 $brand-secondary-extralight: lighten($brand-secondary, 35%);
 $brand-secondary-extradark: darken($brand-secondary, 15%);
 
-$brand-success: #8AC686;
+$brand-success: #85c481;
 $brand-success-light: lighten($brand-success, 10%);
-$brand-success-dark: #6FBF6C;
+$brand-success-dark: darken($brand-success, 10%);
 $brand-success-extralight: lighten($brand-success, 25%);
 $brand-success-extradark: darken($brand-success, 15%);
 
@@ -79,9 +79,9 @@ $brand-bg-alt: $brand-lightgray;
 
 $text-color: $gray-base;
 $text-muted: $gray;
-$headings-color: $brand-success-dark;
+$headings-color: $brand-secondary;
 $headings-muted-color: $gray;
-$headings-small-color: $brand-success-dark;
+$headings-small-color: $brand-secondary;
 $headings-secondary-color: $brand-primary;
 $headings-extra-color: $brand-gray;
 
@@ -150,7 +150,7 @@ $card-heading-rows: 3;
 
 $card-bg: $brand-lightgray;
 $card-bg-active: $brand-white;
-$card--image-bg: $brand-success-extralight;
+$card--image-bg: $brand-primary-extralight;
 $card--image-bg-active: $brand-white;
 
 $card-text-color: $text-color;
