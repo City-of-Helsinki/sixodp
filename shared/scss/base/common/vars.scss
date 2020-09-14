@@ -28,7 +28,7 @@ $darken-intensity: 20%;
 $brand-primary: #074A74;
 $brand-primary-light: lighten($brand-primary, 10%);
 $brand-primary-dark: darken($brand-primary, 10%);
-$brand-primary-extralight: lighten($brand-primary, 35%);
+$brand-primary-extralight: #DAE9ED;
 $brand-primary-extradark: darken($brand-primary, 15%);
 
 $brand-secondary: #488444;
@@ -129,7 +129,7 @@ $banner-heading-color: $brand-white;
 $banner-text-color: $brand-white;
 
 $featured-bg: $brand-lightgray;
-$showcase-card-bg: $brand-primary;
+$showcase-card-bg: $brand-primary-extralight;
 $showcase-card-heading-color: $brand-white;
 $showcase-card-text-color: $brand-white;
 
@@ -156,7 +156,7 @@ $card-heading-rows: 3;
 $card-bg: $brand-lightgray;
 $card-bg-active: $brand-white;
 $card--image-bg: $brand-primary-extralight;
-$card--image-bg-active: $brand-white;
+$card--image-bg-active: $brand-primary-extralight;
 
 $card-text-color: $gray-dark;
 $card-text-color--highlight: $brand-danger;
