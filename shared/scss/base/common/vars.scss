@@ -115,6 +115,7 @@ $category-box-icon-color: $brand-white;
 $category-box-text-color: #A7D4A4;
 $category-box-count-color: #90BECA;
 $stats-text-color: $brand-white;
+$brand-categories: darken($category-box-bg, 20%);
 
 $accordion-bg: $brand-bg-alt;
 $accordion-tab-bg: $brand-bg-alt;
@@ -153,7 +154,7 @@ $card-max-width: 250px;
 $card-content-height: 110px;
 $card-heading-rows: 3;
 
-$card-bg: $brand-lightgray;
+$card-bg: $brand-primary-extralight;
 $card-bg-active: $brand-white;
 $card--image-bg: $brand-primary-extralight;
 $card--image-bg-active: $brand-primary-extralight;
