@@ -63,7 +63,6 @@ certbot_create_if_missing: true
 certbot_certs:
   - domains:
       - "{{ public_facing_hostname }}"
-      - "hri.dataportaali.com"
       - "www.hri.fi"
       - "phppgadmin.{{ public_facing_hostname }}"
 
