@@ -65,6 +65,8 @@ certbot_certs:
       - "{{ public_facing_hostname }}"
       - "www.hri.fi"
       - "phppgadmin.{{ public_facing_hostname }}"
+      - "helsinkiregioninfoshare.fi"
+      - "www.helsinkiregioninfoshare.fi"
 
 solr:
   host: 127.0.0.1
