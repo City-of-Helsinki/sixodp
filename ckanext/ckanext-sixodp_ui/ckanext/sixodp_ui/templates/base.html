@@ -22,32 +22,6 @@
 })(window,document,'script','dataLayer','GTM-W9PV285');</script>
 <!-- End Google Tag Manager -->
 
-  {% if h.snoobi_activated() %}
-    <script type="text/javascript">
-        var _saq = _saq || [];
-
-        (function() {
-
-            var account = 'hel_fi_hki_tieke';
-            var page_name = '';
-            var section = '';
-
-            var snbscript = document.createElement('script');
-            snbscript.type = 'text/javascript';
-            snbscript.async = true;
-            snbscript.src = ('https:' == document.location.protocol ? 'https://' : 'http://')
-                + 'eu1.snoobi.com/snoop.php?tili=' + account
-                + '&page_name=' + page_name
-                + '&section=' + section;
-
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(snbscript, s);
-        })();
-    </script>
-
-{% endif %}
-
-
 {% endblock -%}
 
 {% block styles %}{% endblock %}
