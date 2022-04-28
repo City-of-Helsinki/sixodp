@@ -19,3 +19,5 @@ blocked_bots:
   - DataForSeoBot
   - SemrushBot
   - PetalBot
+  - BLEXBot
+  - dotbot
