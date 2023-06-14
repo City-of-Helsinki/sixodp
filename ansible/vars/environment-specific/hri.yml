@@ -172,7 +172,7 @@ enabled_ckan_extensions:
   - resource_proxy
   - geo_view
   - sentry
-  -
+
 # If AWS is used, these extensions are enabled in CKAN
 enabled_ckan_aws_extensions: cloudstorage
 

@@ -24,6 +24,7 @@
   
 - name: Initialize archiver database
   command: ./bin/ckan "--config={{ ckan_ini }}" archiver init  chdir={{ virtualenv }}
+  when: "'ckanext-archiver' in ckan_extensions"
 
 # This can be removed after run in all environments
 #- name: Migrate archiver database
