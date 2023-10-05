@@ -201,7 +201,7 @@ matomo:
   domain: '//webanalytics.digiaiiris.com/js/'
   script_domain: '//webanalytics.digiaiiris.com/js/'
   api_domain: 'https://{{ secret.matomo_username }}:{{ secret.matomo_password }}@webanalytics.digiaiiris.com/webanalytics-api/'
-  site_id: 1189
+  site_id: 1186
   tracker_filename: "tracker.php"
   script_filename: "piwik.min.js"
   token_auth: "{{ secret.matomo_token_auth }}"
