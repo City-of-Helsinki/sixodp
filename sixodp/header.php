@@ -28,6 +28,7 @@
 		var locale_ckan = '<?php echo get_current_locale_ckan() ?>';
 	</script>
 	<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <?php include('matomo-config.php'); ?>
 </head>
 
 <body <?php body_class(); ?> id="wordpress-indicator">
