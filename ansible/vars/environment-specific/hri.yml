@@ -129,7 +129,7 @@ ckan_extensions:
   - ckanext-statistics
   #- ckanext-sixodp_harvester
   - ckanext-sixodp_showcasesubmit
-  - ckanext-googleanalytics
+  - ckanext-matomo
   - ckanext-geoview
   - ckanext-sentry
 
@@ -143,7 +143,7 @@ enabled_ckan_extensions:
   - recline_grid_view
   - recline_map_view
   - sixodp_showcase
-  - googleanalytics
+  - matomo
   #- qa
   #- archiver
   - collection
@@ -197,9 +197,15 @@ AWS:
   ckan_s3_bucket: sixodp-{{ deployment_environment_id }}-datasets
   region: S3_EU_WEST
 
-google_analytics:
-  id: UA-18949778-1
-  account: www.hri.fi
+matomo:
+  domain: '//webanalytics.digiaiiris.com/js/'
+  script_domain: '//webanalytics.digiaiiris.com/js/'
+  api_domain: 'https://{{ secret.matomo_username }}:{{ secret.matomo_password }}@webanalytics.digiaiiris.com/webanalytics-api/'
+  site_id: 1189
+  tracker_filename: "tracker.php"
+  script_filename: "piwik.min.js"
+  token_auth: "{{ secret.matomo_token_auth }}"
+  start_date: 1.10.2023
 
 recaptcha_sitekey: 6LdPkToUAAAAAEspCT4TXlv1JyUhucSOrtm_tWGu
 
