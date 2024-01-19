@@ -12,7 +12,6 @@ wordpress_plugins:
   - wp-recaptcha-integration
   - wordpress-importer
   - wp-user-avatar
-  - better-search-replace
   - wp-user-avatars
   - classic-editor
   - wordpress-seo
@@ -24,6 +23,7 @@ removed_wordpress_plugins:
   - google-analytics-dashboard-for-wp
   - wp-piwik
   - cookiehub
+  - better-search-replace
 
 polylang_languages: 
   - { name: 'Suomi', code: 'fi', locale: 'fi', flag: 'fi' }
