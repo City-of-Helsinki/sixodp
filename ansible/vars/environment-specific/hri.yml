@@ -69,12 +69,12 @@ certbot_certs:
       - "www.helsinkiregioninfoshare.fi"
 
 solr:
-  host: 127.0.0.1
+  host: "{{ lookup('amazon.aws.aws_ssm', 'bg_server_host', region='eu-west-1' ) }}"
   port: 8983
   listen_address: 127.0.0.1
 
 redis:
-  host: 127.0.0.1
+  host: "{{ lookup('amazon.aws.aws_ssm', 'bg_server_host', region='eu-west-1' ) }}"
   port: 6379
 
 # CKAN accounts created by ansible
