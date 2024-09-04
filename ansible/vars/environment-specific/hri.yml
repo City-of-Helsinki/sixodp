@@ -19,9 +19,9 @@ automatic_updates_recipient: root@localhost
 postgres:
   server:
     installed_locally: false
-    host: sixodp-{{ deployment_environment_id }}-ckan.{{ rds_domain_common_part }}
-    admin_user: ckan_admin
-    admin_password: "{{ secret.database_ckan_root_password }}"
+    host: "{{ lookup('amazon.aws.aws_ssm', 'postgres_host', region='eu-west-1' ) }}"
+    admin_user: "{{ (lookup('amazon.aws.aws_secret',  'ckan-database-master-secret-' + deployment_environment_id, region='eu-west-1') | from_json).get('username') }}"
+    admin_password: "{{ (lookup('amazon.aws.aws_secret',  'ckan-database-master-secret-' + deployment_environment_id, region='eu-west-1') | from_json).get('password') }}"
     trusted_ip_range: 127.0.0.1/32
   users:
     ckan:
@@ -41,9 +41,9 @@ postgres:
 mysql:
   server:
     installed_locally: false
-    host: sixodp-{{ deployment_environment_id }}-wordpress.{{ rds_domain_common_part }}
-    admin_user: wordpress
-    admin_password: "{{ secret.database_wordpress_root_password }}"
+    host: "{{ lookup('amazon.aws.aws_ssm', 'mysql_host', region='eu-west-1' ) }}"
+    admin_user: "{{ (lookup('amazon.aws.aws_secret',  'wp-database-master-secret-' + deployment_environment_id, region='eu-west-1') | from_json).get('username') }}"
+    admin_password: "{{ (lookup('amazon.aws.aws_secret',  'wp-database-master-secret-' + deployment_environment_id, region='eu-west-1') | from_json).get('password') }}"
   users:
     wordpress:
           username: wordpress_user
