@@ -13,13 +13,13 @@ import {FileSystemStack} from "../lib/file-system-stack";
 const app = new cdk.App();
 
 const stackProps = {
-    account: '290365872283',
+    account: '762516190347',
     region: 'eu-west-1',
 }
 
 const env = {
-    environment: 'generic-qa',
-    fqdn: 'dataportaali.com'
+    environment: 'hri',
+    fqdn: 'hri.fi'
 }
 
 const vpcStack = new VpcStack(app, 'vpcStack', {
@@ -65,7 +65,7 @@ const backgroundServerStack = new BackgroundServerStack(app, 'backgroundServerSt
     vpc: vpcStack.vpc,
     environment: env.environment,
     fqdn: env.fqdn,
-    secretBucketName: 'sixodp-secrets',
+    secretBucketName: 'sixodp-helsinki-secrets',
     ckanDatabase: databaseStack.ckanDatabase,
     wpDatabase: databaseStack.wpDatabase,
     ckanDatabaseCredentials: databaseStack.ckanDatabaseCredentials,
@@ -91,13 +91,13 @@ const webServerStack = new WebServerStack(app, 'webServerStack', {
     vpc: vpcStack.vpc,
     environment: env.environment,
     fqdn: env.fqdn,
-    secretBucketName: 'sixodp-secrets',
+    secretBucketName: 'sixodp-helsinki-secrets',
     ckanDatabase: databaseStack.ckanDatabase,
     wpDatabase: databaseStack.wpDatabase,
     ckanDatabaseCredentials: databaseStack.ckanDatabaseCredentials,
     wpDatabaseCredentials: databaseStack.wpDatabaseCredentials,
-    minWebServerCapacity: 1,
-    maxWebServerCapacity: 1,
+    minWebServerCapacity: 2,
+    maxWebServerCapacity: 2,
     backgroundServer: backgroundServerStack.backgroundServer,
     fileSystem: fileSystemStack.fileSystem
 })

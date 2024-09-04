@@ -10,5 +10,17 @@
   "hosted-zone:account=290365872283:domainName=dataportaali.com:region=eu-west-1": {
     "Id": "/hostedzone/Z3MUEH1DAIWOFS",
     "Name": "dataportaali.com."
+  },
+  "availability-zones:account=762516190347:region=eu-west-1": [
+    "eu-west-1a",
+    "eu-west-1b",
+    "eu-west-1c"
+  ],
+  "hosted-zone:account=762516190347:domainName=hri.fi:region=eu-west-1": {
+    "Id": "/hostedzone/ZATUHVQ7UQKB7",
+    "Name": "hri.fi."
+  },
+  "key-provider:account=762516190347:aliasName=alias/secret-encryption-key:region=eu-west-1": {
+    "keyId": "6f573c3d-ceea-45fb-b41b-4beb6c010c8f"
   }
 }

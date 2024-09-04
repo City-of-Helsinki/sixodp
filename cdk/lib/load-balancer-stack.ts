@@ -17,7 +17,12 @@ export class LoadBalancerStack extends Stack {
 
 
         const certificate = new aws_certificatemanager.Certificate(this, 'certificate', {
-            domainName: `${props.environment}.${props.fqdn}`,
+            domainName: `${props.fqdn}`,
+            validation: CertificateValidation.fromDns(zone)
+        })
+
+        const wwwCertificate = new aws_certificatemanager.Certificate(this, 'wwwCertificate', {
+            domainName: `www.${props.fqdn}`,
             validation: CertificateValidation.fromDns(zone)
         })
 
@@ -37,7 +42,7 @@ export class LoadBalancerStack extends Stack {
             port: 443,
             open: true,
             certificates: [
-                certificate
+                certificate, wwwCertificate
             ]
         })
 
@@ -51,11 +56,15 @@ export class LoadBalancerStack extends Stack {
         })
 
 
-        new aws_route53.ARecord(this, 'ARecord', {
+        new aws_route53.ARecord(this, 'subARecord', {
             zone: zone,
             target: aws_route53.RecordTarget.fromAlias(new LoadBalancerTarget(loadBalancer)),
-            recordName: props.environment
+            recordName: 'www'
         })
 
+        new aws_route53.ARecord(this, 'rootARecord', {
+            zone: zone,
+            target: aws_route53.RecordTarget.fromAlias(new LoadBalancerTarget(loadBalancer)),
+        })
     }
 }
