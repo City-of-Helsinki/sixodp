@@ -25,3 +25,4 @@ blocked_bots:
   - Bytespider
   - Diffbot
   - Amazonbot
+  - meta-externalagent
