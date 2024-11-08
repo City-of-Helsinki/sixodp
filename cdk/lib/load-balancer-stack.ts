@@ -81,7 +81,7 @@ export class LoadBalancerStack extends Stack {
         if ( props.pgAdminEnabled ) {
 
             const pgAdminCertificate = new aws_certificatemanager.Certificate(this, 'pgAdmincertificate', {
-                domainName: `phppgadmin.${props.environment}.${props.fqdn}`,
+                domainName: `phppgadmin.${props.fqdn}`,
                 validation: CertificateValidation.fromDns(zone)
             })
 
@@ -106,7 +106,7 @@ export class LoadBalancerStack extends Stack {
             new aws_route53.ARecord(this, 'pgAdminARecord', {
                 zone: zone,
                 target: aws_route53.RecordTarget.fromAlias(new LoadBalancerTarget(loadBalancer)),
-                recordName: `phppgadmin.${props.environment}`
+                recordName: `phppgadmin`
             })
 
             for (let i = 1; i <= props.numberOfAllowedIpsInPgAdmin; i++) {
