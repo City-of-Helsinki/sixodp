@@ -22,7 +22,7 @@ export class LoadBalancerStack extends Stack {
         super(scope, id, props);
 
         const zone = aws_route53.HostedZone.fromLookup(this, 'HostedZone', {
-            domainName: props.fqdn
+            domainName: props.domain
         })
 
 
