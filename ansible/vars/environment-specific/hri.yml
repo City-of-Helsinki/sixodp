@@ -150,6 +150,7 @@ enabled_ckan_extensions:
   - reminder
   - datasetcopy
   - sixodp
+  - activity
   - disqus
   - datastore
   - scheming_datasets
