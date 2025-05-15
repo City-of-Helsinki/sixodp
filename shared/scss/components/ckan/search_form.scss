@@ -1,4 +1,6 @@
-$relative-search-form-position: 5/6;
+@use "sass:math";
+
+$relative-search-form-position: math.div(5, 6);
 
 .search-form-container {
   width: 100%;

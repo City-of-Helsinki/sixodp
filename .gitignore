@@ -18,3 +18,5 @@ sixodp/snoobi-config.php
 sixodp/matomo-config.php
 npm-debug.log
 src
+
+*.mo

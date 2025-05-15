@@ -26,3 +26,4 @@ blocked_bots:
   - Diffbot
   - Amazonbot
   - meta-externalagent
+  - GPTBot
