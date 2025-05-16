@@ -5,7 +5,7 @@ $relative-logo-position: math.div(2.5, 6);
 .logos {
   top: $page-hero-height * $relative-logo-position;
   padding: 0 $base;
-  z-index: $zindex-fixed;
+  z-index: $zindex-drodown;
   position: absolute;
   text-align: center;
   width: 100%;
