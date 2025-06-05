@@ -27,3 +27,4 @@ blocked_bots:
   - Amazonbot
   - meta-externalagent
   - GPTBot
+  - GoogleOther
