@@ -8,7 +8,6 @@ wordpress_plugins:
   - custom-twitter-feeds
   - polylang
   #- wpcustom-category-image
-  - disqus-comment-system
   - wp-recaptcha-integration
   - wordpress-importer
   - wp-user-avatar
@@ -27,6 +26,7 @@ removed_wordpress_plugins:
   - better-search-replace
   - configure-smtp
   - wp-trello
+  - disqus-comment-system
 
 polylang_languages: 
   - { name: 'Suomi', code: 'fi', locale: 'fi', flag: 'fi' }
