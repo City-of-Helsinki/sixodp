@@ -59,6 +59,7 @@ const databaseStack = new DatabaseStack(app, 'databaseStack', {
     fqdn: env.fqdn,
     domain: env.domain,
     vpc: vpcStack.vpc,
+    databaseInsightsEnabled: true
 })
 
 
@@ -168,6 +169,9 @@ if (env.shieldEnabled) {
         rateLimitedCountriesParameterName: shieldParameterStack.rateLimitedCountriesParameterName,
         whitelistedCountriesParameterName: shieldParameterStack.whitelistedCountriesParameterName,
         onlyAllowWhitelistedCountries: false,
+        blockBlacklistedCountries: false,
+        blacklistedCountriesParameterName: shieldParameterStack.blacklistedCountriesParameterName,
+        blockASNs: false,
         loadBalancer: loadBalancerStack.loadBalancer
     })
 }
