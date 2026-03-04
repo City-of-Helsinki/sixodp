@@ -12,6 +12,7 @@ import {Construct} from "constructs";
 import {ShieldStackProps} from "./shield-stack-props";
 
 import { z } from "zod";
+import {CfnWebACL} from "aws-cdk-lib/aws-wafv2";
 
 export class ShieldStack extends Stack {
     constructor(scope: Construct, id: string, props: ShieldStackProps) {
@@ -258,7 +259,39 @@ export class ShieldStack extends Stack {
             rules = rules.concat(ruleList)
         }
 
+        const blockBing: aws_wafv2.CfnWebACL.RuleProperty = {
+            name: "block-bingbot",
+            priority: rules.length,
+            action: {
+                block: {}
+            },
+            statement: {
+                andStatement: {
+                    statements: [
+                        {
+                            labelMatchStatement: {
+                                scope: "LABEL",
+                                key: "awswaf:managed:aws:bot-control:bot:name:bingbot"
+                            }
+                        },
+                        {
+                            labelMatchStatement: {
+                                scope: "LABEL",
+                                key: "awswaf:managed:aws:bot-control:bot:verified"
+                            }
+                        }
+                    ]
+                }
+            },
+            ruleLabels: [],
+            visibilityConfig: {
+                cloudWatchMetricsEnabled: true,
+                metricName: "request-block-bingbot",
+                sampledRequestsEnabled: true
+            }
+        }
 
+        rules.push(blockBing)
 
         const cfnWebAcl = new aws_wafv2.CfnWebACL(this, 'WAFWebACL', {
             scope: "REGIONAL",
