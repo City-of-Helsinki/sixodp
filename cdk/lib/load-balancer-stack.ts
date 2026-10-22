@@ -26,6 +26,10 @@ export class LoadBalancerStack extends Stack {
             domainName: props.domain
         })
 
+        const alternativeZone = aws_route53.HostedZone.fromLookup(this, 'AlternativeZone', {
+            domainName: props.alternativeDomain
+        })
+
 
         const certificate = new aws_certificatemanager.Certificate(this, 'certificate', {
             domainName: `${props.fqdn}`,
@@ -35,6 +39,16 @@ export class LoadBalancerStack extends Stack {
         const wwwCertificate = new aws_certificatemanager.Certificate(this, 'wwwCertificate', {
             domainName: `www.${props.fqdn}`,
             validation: CertificateValidation.fromDns(zone)
+        })
+
+        const altenativeCertificate = new aws_certificatemanager.Certificate(this, 'altenativeCertificate', {
+            domainName: props.alternativeFqdn,
+            validation: CertificateValidation.fromDns(alternativeZone)
+        })
+
+        const alternativeWwwCertificate = new aws_certificatemanager.Certificate(this, 'alternativeWwwCertificate', {
+            domainName: `www.${props.alternativeFqdn}`,
+            validation: CertificateValidation.fromDns(alternativeZone)
         })
 
 
@@ -53,7 +67,7 @@ export class LoadBalancerStack extends Stack {
             port: 443,
             open: true,
             certificates: [
-                certificate, wwwCertificate
+                certificate, wwwCertificate, altenativeCertificate, alternativeWwwCertificate
             ]
         })
 
@@ -77,6 +91,17 @@ export class LoadBalancerStack extends Stack {
         new aws_route53.ARecord(this, 'rootARecord', {
             zone: zone,
             target: aws_route53.RecordTarget.fromAlias(new LoadBalancerTarget(this.loadBalancer)),
+        })
+
+        new aws_route53.ARecord(this, 'alternativeRootARecord', {
+            zone: alternativeZone,
+            target: aws_route53.RecordTarget.fromAlias(new LoadBalancerTarget(this.loadBalancer)),
+        })
+
+        new aws_route53.ARecord(this, 'alternativeSubARecord', {
+            zone: alternativeZone,
+            target: aws_route53.RecordTarget.fromAlias(new LoadBalancerTarget(this.loadBalancer)),
+            recordName: 'www'
         })
 
         if ( props.pgAdminEnabled ) {

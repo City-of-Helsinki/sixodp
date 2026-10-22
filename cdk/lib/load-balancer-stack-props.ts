@@ -5,5 +5,7 @@ export interface LoadBalancerStackProps extends NetworkStackProps {
     webServerAsg: aws_autoscaling.AutoScalingGroup,
     pgAdminEnabled: boolean
     numberOfAllowedIpsInPgAdmin: number
-    pgAdminAllowedIpPrefix: string
+    pgAdminAllowedIpPrefix: string,
+    alternativeDomain: string,
+    alternativeFqdn: string
 }

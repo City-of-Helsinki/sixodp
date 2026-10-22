@@ -24,6 +24,8 @@ const env = {
     environment: 'hri',
     domain: 'hri.fi',
     fqdn: 'hri.fi',
+    alternativeDomain: 'helsinkiregioninfoshare.fi',
+    alternativeFqdn: 'helsinkiregioninfoshare.fi',
     shieldEnabled: true
 }
 
@@ -124,7 +126,9 @@ const loadBalancerStack = new LoadBalancerStack(app, 'loadBalancerStack', {
     webServerAsg: webServerStack.webServerAsg,
     pgAdminEnabled: true,
     numberOfAllowedIpsInPgAdmin: 2,
-    pgAdminAllowedIpPrefix: parameterStack.pgAdminAllowedPrefix
+    pgAdminAllowedIpPrefix: parameterStack.pgAdminAllowedPrefix,
+    alternativeDomain: env.alternativeDomain,
+    alternativeFqdn: env.alternativeFqdn,
 })
 
 const sesStack = new SesStack(app, 'sesStack', {
